@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Focused Project</title>
+    <link rel="stylesheet" href="./assets/css/wrapper-style.css">
+    <!--CS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" 
+        rel="stylesheet">
+        <style>
+        body {
+            font-family: 'Plus Jakarta Sans', serif;
+        }
+     </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="wrapper-header">
+            <span class="jp">でぃむ</span>
+            <h1>dim.sh</h1>
+            <span id="clock"></span>
+            <nav class="wrapper-nav">
+                <ul>
+                    <li>
+                        <a href="/">home</a>
+                    </li>
+                    <li>
+                        <a href="/about">about</a>
+                    </li>
+                    <li>
+                        <a href="/blog">blog</a>
+                    </li>
+                    <li>
+                        <a href="/projects">projects</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <div class="wrapper-middle">
+            <div class="wrapper-aside">
+                <section class="now-playing">
+                    <h2>dim is listening to</h2>
+                    <div class="content">
+                        <img id="trackart">
+                        <div class="info">
+                            <a id="tracktitle"></a>
+                            <a id="trackartist"></a>
+                            <a id="trackalbum"></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="change-log">
+                    <h2>changelog</h2>
+                </section>
+            </div>
+        </div>
+
+    </div>
+ <!--SCRIPT-->
+    <!--JQUERY 3.7.1 (note to myself: this should be the first one to load)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Testing what a DOM should look like.-->
+    <script src="./assets/js/clock.js"></script>
+    <!--JQUERY STYLE MY TOOLTIPS-->
+    <script src="./assets/tooltips/jquery.style-my-tooltips.js"></script>
+    <link rel="stylesheet" href="./assets/tooltips/style-my-tooltips.css">
+    <!--Last Playing using Last.fm API-->
+    <script src="./assets/js/nowplaying.js"></script>
+</body>
+</html>

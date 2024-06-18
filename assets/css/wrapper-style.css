@@ -1,0 +1,151 @@
+/* background copied from https://www.magicpattern.design/tools/css-backgrounds */
+:root {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #000000 , #000000 0.0002px, #e5e5f7 0, #fff9f9 50%);
+    margin: 0 auto;
+    --letter-shadow: 0 0 3px #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 900px;
+    margin: 10px auto 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.wrapper-header {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.7)), 
+        url('/assets/img/myCringeAhhPhoto.png') top center/cover;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper-header .jp {
+    font-family: 'Hiragino Maru Gothic ProN', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+    top: 120px;
+    left: 170px;
+    user-select: none;
+    color: #fff;
+    text-shadow: var(--letter-shadow);
+}
+
+.wrapper-header h1 {
+    margin: 0;
+    user-select: none;
+    height: 112px;
+    font-size: 45px;
+    font-weight: 800;
+    padding: 70px 0 0 10px;
+    color: #fff;
+    text-shadow: var(--letter-shadow);
+}
+
+.wrapper-header #clock {
+    position: relative;
+    text-align: center;
+    left: 770px;
+    bottom: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 12%;
+    text-shadow: var(--letter-shadow);
+    user-select: none;
+}
+
+.wrapper-header .wrapper-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.wrapper-header .wrapper-nav ul :first-of-type a {
+    border-left: 1px solid #000
+}
+
+.wrapper-header .wrapper-nav ul li a {
+    padding: 6px 0 0 0;
+    display: block;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 225px;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none
+}
+
+
+.wrapper-middle {
+    background: #fff;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    display: grid;
+    grid-template-columns: 5fr 13fr
+}
+
+.wrapper-middle .wrapper-aside section {
+    margin: 10px;
+}
+
+.wrapper-middle .wrapper-aside section h2 {
+    margin: 0;
+    padding: 2px 4px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #000
+}
+
+.wrapper-middle .wrapper-aside section .content {
+    padding: 4px;
+}
+
+.wrapper-middle .wrapper-aside section {
+    border: 1px solid #000;
+    
+}
+
+.wrapper-aside .now-playing .content {
+    display: flex;
+}
+
+.wrapper-aside .now-playing .content img {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #000;
+}
+
+.wrapper-aside .now-playing .content .info {
+    margin-left: 5px;    
+}
+
+.wrapper-aside .now-playing .content .info a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 140px;
+    overflow-wrap: break-word
+}
+
+.wrapper-aside .now-playing .content .info #tracktitle  {
+    font-weight:bolder;
+}
